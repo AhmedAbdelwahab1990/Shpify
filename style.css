@@ -1,0 +1,355 @@
+body {
+    background-color: white;
+}
+h1 {
+  font-size: 40px;
+  color: darkgreen;
+  text-align: center;
+}
+p {
+  text-align: left;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 5px 5px;
+  color: rgb(32, 31, 31); 
+}
+.green {
+    color: green;
+}
+  /*----------------------------------------------------Navigation list at top with links and hover properity-------------------------*/
+  @media (min-width: 992px){
+    .dropdown-menu .dropdown-toggle:after{
+        border-top: .3em solid transparent;
+        border-right: 0;
+        border-bottom: .3em solid transparent;
+        border-left: .3em solid;
+    }
+
+    .dropdown-menu .dropdown-menu{
+        margin-left:0; margin-right: 0;
+        border-left: 2px rgb(40, 187, 231);
+    }
+
+    .dropdown-menu li{
+        position: relative;
+    }
+    .nav-item .submenu{ 
+        display: none;
+        position: absolute;
+        left:100%; top:-7px;
+        width: 300px;
+    }
+    .nav-item .submenu-left{ 
+        right:100%; left:auto;
+    }
+
+    .dropdown-menu > li:hover{
+         background-color: #ffffff ;
+         border-left: 5px solid rgb(40, 187, 231);
+        }
+    .dropdown-menu > li:hover > .submenu{
+        display: block;
+        border-left: 2px rgb(40, 187, 231);
+    }
+
+    .dropdown-item:hover {
+        border-left: 2px rgb(40, 187, 231);
+        background-color: rgb(214, 205, 205);
+    }
+
+    .navbar-nav{
+        background-color: wheat;
+    }
+
+    .container{
+        background-color: wheat;
+    }
+}
+/*--------------------------------------first section is 2 sections (divs) with a background colour and video container------------------------------*/
+.firstDIV {
+  border: none;
+  margin: auto;
+  height: 300px;
+  text-align: center;
+  width: 90%;
+  background-color: lightgoldenrodyellow;
+  color:white;
+  margin: none;
+  width: 90%;
+}
+.subrightdiv {
+  width: 50%;
+  float: right;
+}
+
+.subleftdiv {
+  width: 50%;
+  float: left;
+}
+
+/*----------------------------------Video wrapper (the container of the video itself with thumbnail and button)------------------------*/
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper > video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+  display: none;
+}
+
+.video-overlay-play-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px calc(50% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.95;
+  cursor: pointer;
+  background-image: linear-gradient(transparent, #000);
+  transition: opacity 150ms;
+}
+
+.video-overlay-play-button:hover {
+  opacity: 1;
+}
+
+.video-overlay-play-button.is-hidden {
+  display: none;
+}
+/*-------------------------------------------------------------------------Email Verification Input---------------------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {display: block;
+  width: 80%;
+  height: 36px;
+  padding: 6px 14px;
+  font-size: 14px;
+  line-height: 1.57142857;
+  color: rgb(19, 133, 47);
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #cfd3cc;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  margin: 0;
+  float: right;
+  }
+  
+  .btn {
+  display: block;
+  padding: 6px 14px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.57142857;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background:rgb(10, 82, 25);
+  color: #fff;
+}
+
+.pull-right {
+float:right;
+}
+
+.s-margin-left {
+  margin-left: 0px;
+}
+
+  /*-------------------------------------------------------The button should have a link inside it and hover property--------------------------------------*/
+.button {
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(23, 90, 56);
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.button1 {
+  background-color: rgb(63, 128, 66);
+  padding: 20px;
+  margin: 20px;;
+  text-align:right;
+  opacity: 0.9;
+  border: 2px solid white;
+  color: white; 
+  border-radius: 15px;
+}
+/*This second buttom is for another section*/
+.button2 {
+  background-color: rgb(179, 102, 204);
+  text-align:right;
+  opacity: 0.9;
+  border: 2px solid white;
+  color: white; 
+  border-radius: 40px;
+  padding: 0px;
+}
+
+.button1:hover {
+  color: black;
+}
+/*-----------------------------------------second section same as the first but with an image gallery---------------------------*/
+.secondDIV {
+  background-color:rgb(16, 107, 72);
+  width: 90%;
+  height: 1200px;
+  border: none;
+  margin: auto;
+  text-align: top;
+  color: rgb(255, 255, 255);
+  margin: none;
+}
+  /*here we will make images gallery*/
+  div.gallery {
+    margin: 10px;
+    float: left;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  /*link styling*/
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }    
+/*---------------------------------------------here is the styling for paragraphs inside the tickets------------------------------*/
+  
+/*-------------------------------------Third section is similar to the first div but with multiple line of contents--------------------------*/
+.thirdDIV {
+  border: none;
+  margin: auto;
+  padding: 80px;
+  background-color: white; 
+  text-align: center;
+  color:white;
+  margin: none;
+  width: 70%;
+  height: 2000px;
+}
+
+  /*-----------------------------------------Fourth section, almost like the first one but with different background colour and contents-------------------------*/
+.fourthDIV {
+  background-color:rgb(255, 255, 255);
+  height: 600;
+  border: none;
+  margin: auto;
+  padding: none;
+  text-align: center;
+  color:white;
+  margin: none;
+}
+
+  /*--------------------------------------Fifth section is also the same as the fourth but here we will divide the left div into 3 child divs-----------*/
+
+.fifthDIV {
+  background-color: lightgoldenrodyellow;
+  height: 800px;
+  border: none;
+  margin: auto;
+  padding: 60px;
+  text-align: center;
+  color:black;
+  margin: none;
+  width: 90%;
+}
+
+  /*------------------------------------------------------Sixth section same as the fifth section styling-----------*/
+
+  .sixthDIV {
+    background-color:#ffffff;
+    height: 400px;
+    border: none;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    color:black;
+    margin: none;
+    width: 90%;
+  }
+  
+  /*--------------------------------------------------------------Footer styling-------------------------------------------------------*/
+.footer-top { padding: 20px 0; background: rgb(22, 80, 46); text-align: left; color: #aaa; }
+.footer-top h3 { padding-bottom: 10px; color: #fff; }
+
+.footer-about img.logo-footer { max-width: 74px; margin-top: 0; margin-bottom: 18px; }
+.footer-about p a { border: 0; }
+.footer-about p a:hover, .footer-about p a:focus { border: 0; }
+
+.footer-contact p { word-wrap: break-word; }
+.footer-contact i { padding-right: 10px; font-size: 18px; color: rgb(255, 250, 250); }
+.footer-contact p a { border: 0; }
+.footer-contact p a:hover, .footer-contact p a:focus { border: 0; }
+
+.footer-links a { color: rgb(216, 204, 204); border: 0; }
+.footer-links a:hover, .footer-links a:focus { color: #fff; }
+
+.footer-bottom { padding: 15px 0 17px 0; background: rgb(22, 80, 46); text-align: left; color: #aaa; border-top: rgb(255, 254, 254) 2px;}
+
+.footer-social { padding-top: 3px; text-align: right; }
+.footer-social a { margin-left: 20px; color: rgb(255, 255, 255); border: 0; }
+.footer-social a:hover, .footer-social a:focus { color: #79a05f; border: 0; }
+.footer-social i { font-size: 24px; vertical-align: middle; }
+/*--------------------------------------buttom navbar-----------------------*/
+
+.btmnav {
+  overflow: hidden;
+  background-color: rgb(22, 80, 46);
+}
+
+.btmnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.btmnav a:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
